@@ -1,5 +1,4 @@
 function swap (val1, val2) {
-  debugger;
   let temp = val1;
   val1 = val2;
   val2 = temp;

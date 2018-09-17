@@ -1,7 +1,3 @@
-
-
-
-
 describe('Bubble Sort', function(){
 
     beforeAll(function() {
@@ -16,7 +12,7 @@ describe('Bubble Sort', function(){
 
     //we wanted to set the spy on these other two cases, but couldn't figure out how
     //do they need to all be in separate spy blocks?
-    
+
     //     array = [];
     //     window.bubbleSort(array);
     //     expect(window.swap.calls.count()).not.toBeGreaterThan(0);

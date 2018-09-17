@@ -1,3 +1,11 @@
+function swap (val1, val2) {
+  debugger;
+  let temp = val1;
+  val1 = val2;
+  val2 = temp;
+  return [val1, val2];
+}
+
 function bubbleSort (array) {
   let isSorted = false;
   let maxIdx = array.length - 1;
@@ -6,13 +14,15 @@ function bubbleSort (array) {
     for (let i = 0; i < maxIdx; i++) {
       if (array[i] > array[i + 1]) {
         isSorted = false;
-        //swap
-        let temp = array[i];
-        array[i] = array[i + 1];
-        array[i + 1] = temp;
+        let newOrder = swap(array[i], array[i + 1]);
+        array[i] = newOrder[0];
+        array[i + 1] = newOrder[1];        
       }
     }
     maxIdx--;
   }
   return array;
 }
+
+
+bubbleSort([1, 5, 3, 7, 9, 2]);

@@ -17,6 +17,6 @@ describe('Merge function', function(){
 
 describe('Merge Sort function', function() {
     it('is able to sort an array using split and merge functions', function() {
-        expect( mergeSort([5, 2, 8, 10, 1, 13, 48, 7]) ).toEqual( [1, 2, 5, 7, 8, 10, 13, 48, 7]);
+        expect( mergeSort([5, 2, 8, 10, 1, 13, 48, 7]) ).toEqual( [1, 2, 5, 7, 8, 10, 13, 48]);
     })
 })
